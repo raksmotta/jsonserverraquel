@@ -1,156 +1,53 @@
 {
-  "users": [
+    "trajetos": [
       {
-          "id": "379fd1da-088e-4f7d-91f1-bfd334b601a7",
-          "login": "RicAmorim",
-          "senha": "12345@",
-          "nome": "Ricardo Amorim",
-          "email": "amorim@gmail.com",
-          "idade": "25",
-          "cidade": "Belo Horizonte",
-          "bairro": "Castelo",
-          "CEP": "30150290",
-          "Universidade": "PUC Minas Coreu",
-          "validadacaoInstitucional": false,
-          "sexo": "masculino",
-          "telefone": "5531993679089",
-          "carro": {
-              "marca": "Fiat",
-              "modelo": "Mobi",
-              "cor": "vermelho",
-              "placa": "ABC-1234"
-          },
-          "trajetos": [
-              {
-                  "id": "1",
-                  "start_point": "Padaria Pão Novo - Castelo",
-                  "destination": "PUC Minas Coreu",
-                  "maxPassageiros": "3",
-                  "passengers": ["Rita Mendes"],
-                  "regularidade": ["Seg"],
-                  "hour": "06:00"
-              }
-          ],
-          "tipo": ["passenger", "driver"]
+        "origem": "UFMG - Pampulha",
+        "destino": "Savassi",
+        "horario": "12:30",
+        "diaSemana": "Segunda-feira",
+        "id": "ccff"
       },
       {
-          "id": "c0fff893-e8c4-4e15-9cde-1c007b4dc8f0",
-          "login": "admin",
-          "senha": "123",
-          "nome": "Rita Mendes",
-          "email": "ritamendes@gmail.com",
-          "idade": "25",
-          "cidade": "Belo Horizonte",
-          "bairro": "Castelo",
-          "CEP": "30150290",
-          "Universidade": "PUC Minas Coreu",
-          "validadacaoInstitucional": true,
-          "sexo": "feminino",
-          "telefone": "5531993679089",
-          "carro": {
-              "marca": "Fiat",
-              "modelo": "Uno",
-              "cor": "vermelho",
-              "placa": "ABC-1234"
-          },
-          "trajetos": [
-              {
-                  "id": "1",
-                  "start_point": "Supermercado BH - Castelo",
-                  "destination": "PUC Minas Coreu",
-                  "maxPassageiros": "3",
-                  "passengers": ["Ricardo Amorim"],
-                  "regularidade": ["Sab"],
-                  "hour": "08:00"
-              },
-              {
-                  "id": "2",
-                  "start_point": "Padaria 3 Poderes - Castelo",
-                  "destination": "PUC Minas Coreu",
-                  "maxPassageiros": "3",
-                  "passengers": ["Daniel Costa"],
-                  "regularidade": ["Ter", "Qua", "Quinta", "Sexta"],
-                  "hour": "06:00"
-              }
-          ],
-          "tipo": ["driver"]
+        "origem": "Cidade Nova",
+        "destino": "PUC - Coração Eucarístico",
+        "horario": "20:45",
+        "diaSemana": "Terça-feira",
+        "id": "ca2e"
       },
       {
-          "id": "89767bea-c884-46ee-a146-83c5fa6ce32e",
-          "login": "admin",
-          "senha": "123",
-          "nome": "Daniel Costa",
-          "email": "danielcosta@gmail.com",
-          "idade": "25",
-          "cidade": "Belo Horizonte",
-          "bairro": "Pampulha",
-          "CEP": "30150290",
-          "Universidade": "PUC Minas Coreu",
-          "validadacaoInstitucional": true,
-          "sexo": "masculino",
-          "telefone": "5531993679089",
-          "carro": {},
-          "trajetos": [],
-          "tipo": ["passenger"]
+        "id": "8829",
+        "origem": "Buritis",
+        "destino": "UFMG - Escola de Arquitetura",
+        "horario": "06:00",
+        "diaSemana": "Quarta-feira"
+      },
+      {
+        "origem": "Me delete!",
+        "destino": "Clique em Deletar!",
+        "horario": "01:01",
+        "diaSemana": "Quinta-feira",
+        "id": "3b3b"
+      },
+      {
+        "origem": "PUC - Coração Eucarístico",
+        "destino": "Ouro Preto",
+        "horario": "21:40",
+        "diaSemana": "Sexta-feira",
+        "id": "f8cd"
+      },
+      {
+        "origem": "Me edite!",
+        "destino": "Clique em Editar!",
+        "horario": "00:00",
+        "diaSemana": "Sexta-feira",
+        "id": "4594"
+      },
+      {
+        "id": "e139",
+        "origem": "Castelo",
+        "destino": "CMMG - Campus 2",
+        "horario": "06:00",
+        "diaSemana": "Segunda-feira"
       }
-  ],
-  "caronas": [
-      {
-          "id": "1",
-          "status": "solicitacao",
-          "driver": {
-              "nome": "Ricardo Amorim",
-              "id": "379fd1da-088e-4f7d-91f1-bfd334b601a7"
-          },
-          "passenger": {
-              "nome": "Rita Mendes",
-              "id": "c0fff893-e8c4-4e15-9cde-1c007b4dc8f0"
-          },
-          "trajetoID": "1",
-          "mensagem": [
-          ]
-      },
-      {
-          "id": "2",
-          "status": "confirmada",
-          "driver": {
-              "nome": "Rita Mendes",
-              "id": "c0fff893-e8c4-4e15-9cde-1c007b4dc8f0"
-          },
-          "passenger": {
-              "nome": "Daniel Costa",
-              "id": "89767bea-c884-46ee-a146-83c5fa6ce32e"
-          },
-          "trajetoID": "2",
-          "mensagem": [
-              {
-                  "id": "1",
-                  "type": "solicitacao",
-                  "caronaID": "2",
-                  "enviadaNotificacao": true
-              }
-          ]
-      },
-      {
-          "id": "3",
-          "status": "solicitacao",
-          "driver": {
-              "nome": "Rita Mendes",
-              "id": "c0fff893-e8c4-4e15-9cde-1c007b4dc8f0"
-          },
-          "passenger": {
-              "nome": "Ricardo Amorim",
-              "id": "379fd1da-088e-4f7d-91f1-bfd334b601a7"
-          },
-          "trajetoID": "1",
-          "mensagem": [
-              {
-                  "id": "1",
-                  "type": "solicitacao",
-                  "caronaID": "3",
-                  "enviadaNotificacao": true
-              }
-          ]
-      }
-  ]
-}
+    ]
+  }
